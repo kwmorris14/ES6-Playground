@@ -31,4 +31,14 @@ var SoapFactory = function (){
 
 var factory = new SoapFactory();
 
-var originalSoap = factory.create("original");
+var selection = document.getElementById("Scent");
+
+var pickSoap = function(){
+
+	var userSoap = factory.create(selection.value);
+
+	alert(userSoap.scent);
+
+	$("#soapDiv").append("<div> Enjoy your " + userSoap.scent + " Scented Soap!");
+
+};

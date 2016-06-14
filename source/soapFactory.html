@@ -3,9 +3,26 @@
 <head></head>
 <body>
 
-	<div id="helloDiv"></div>
+	<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
 
 	<script src="soapFactory.js"></script>
+	
+	<div>Which soap would you like?</div>
+
+		<form>
+		<input type="radio" id="Scent" value="original" checked> Original<br>
+		<input type="radio" id="Scent" value="lemon"> Lemon<br>
+		<input type="radio" id="Scent" value="peach"> Peach<br>
+		<input type="radio" id="Scent" value="pomegranate"> Pomegranate<br>
+		</br>
+		<button onsubmit="pickSoap()">Pick Soap</button>
+		</form>
+
+		<div id="soapDiv"></div>
+
+	
+
+
 	
 </body>
 </html>
